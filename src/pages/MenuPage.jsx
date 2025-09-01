@@ -14,7 +14,7 @@ export default function MenuPage() {
 
   useEffect(() => {
     // Fetch menu from backend
-    fetch(`https://your-backend.com/api/menu?branch=${branchId}&flow=${menuFlowId}`)
+    fetch(`https://backend-i0c7.onrender.com/api/menu?branch=${branchId}&flow=${menuFlowId}`)
       .then((res) => res.json())
       .then((data) => setMenu(data.items || []))
       .catch(() => setMenu([]));
