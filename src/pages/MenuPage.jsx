@@ -35,7 +35,7 @@ export default function MenuPage() {
   const submitOrder = () => {
     const order = { branchId, menuFlowId, cart, customer };
 
-    fetch("https://your-backend.com/api/order", {
+    fetch("https://backend-i0c7.onrender.com/api/order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order),
